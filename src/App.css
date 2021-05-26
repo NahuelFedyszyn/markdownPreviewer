@@ -1,38 +1,104 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom:2rem ;
+}
+
+.title{
+  margin-top: 2rem;
+  color: whitesmoke;
+  text-shadow: white 0 0 1px;
+  font-family: monospace;
+}
+
+textarea{
+  min-width: 80%;
+  max-width: 80%;
+  margin: 1rem auto ;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: grey 0 0 15px 0.2px;
+  border-radius: 5px;
+  min-height: 40vh;
+}
+
+#previewer{
+  min-width: 80%;
+  max-width: 80%;
+  padding: 1rem;
+  background-color: whitesmoke;
+  min-height: 5rem;
+  margin: auto;
+  box-shadow: grey 0 0 15px 0.2px;
+  border: solid blue 1px;
+  text-align: left;
+}
+
+.nahuelContainer{
+  margin: 2rem auto;
+}
+
+
+.footerA{
   color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+  margin: auto 1rem;
+ 
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconContainer{
+  padding-bottom: 4rem;
+}
+
+.footerA:hover{
+  text-shadow: white 0 0 5px;
+  transform: scale(2);
+}
+
+ 
+#previewer h1{
+  border-bottom: black 3px solid;
+  padding-bottom: 1rem;
+}
+
+#previewer h2{
+  border-bottom: 2px solid grey;
+  padding-bottom: 0.5rem;
+}
+
+#previewer pre{
+  background: lightgrey;
+  padding: 1rem;
+  border: black solid 1px;
+
+}
+
+#previewer code{
+  background: lightgrey;
+  padding: 1px 4px 2px 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+#previewer blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#previewer table{
+  border-collapse: collapse;
+}
+
+#previewer td, #previewer th{
+  border: 2px solid black;
+  padding: 1rem auto;
 }
